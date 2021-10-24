@@ -1,5 +1,3 @@
-# Policy definitions for Online, Offline and Safe RL
-
 from controllers import demorl
 import numpy as np
 import gym
@@ -9,7 +7,6 @@ from models.predict_env_pets import PredictEnv as PredictEnvPETS
 import sac
 import torch
 
-# Default termination function that outputs done=False
 def default_termination_function(state,action,next_state):
     if (torch.is_tensor(next_state)):
         done = torch.zeros((next_state.shape[0],1))

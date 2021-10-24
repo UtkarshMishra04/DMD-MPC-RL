@@ -12,13 +12,6 @@ import itertools
 import time
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-num_train = 60000  # 60k train examples
-num_test = 10000  # 10k test examples
-train_inputs_file_path = './MNIST_data/train-images-idx3-ubyte.gz'
-train_labels_file_path = './MNIST_data/train-labels-idx1-ubyte.gz'
-test_inputs_file_path = './MNIST_data/t10k-images-idx3-ubyte.gz'
-test_labels_file_path = './MNIST_data/t10k-labels-idx1-ubyte.gz'
-
 BATCH_SIZE = 100
 
 
@@ -455,58 +448,3 @@ def set_tf_weights(model, tf_weights):
             param.data = torch.FloatTensor(pth_weights[name]).to(device).reshape(param.data.shape)
             pth_weights[name] = param.data
             print(name)
-
-
-def main():
-    torch.set_printoptions(precision=7)
-    import pickle
-    # Import MNIST train and test examples into train_inputs, train_labels, test_inputs, test_labels
-    # train_inputs, train_labels = get_data(train_inputs_file_path, train_labels_file_path, num_train)
-    # test_inputs, test_labels = get_data(test_inputs_file_path, test_labels_file_path, num_test)
-
-    num_networks = 7
-    num_elites = 5
-    state_size = 17
-    action_size = 6
-    reward_size = 1
-    pred_hidden_size = 200
-    model = EnsembleDynamicsModel(num_networks, num_elites, state_size, action_size, reward_size, pred_hidden_size)
-
-    # load tf weights and set it to be the inital weights for pytorch model
-    with open('tf_weights.pkl', 'rb') as f:
-        tf_weights = pickle.load(f)
-    # set_tf_weights(model, tf_weights)
-    # x = model.model_list[0].named_parameters()
-    # for name, param in model.model_list[0].named_parameters():
-    #     if param.requires_grad:
-    #         print(name, param.shape)
-    # exit()
-    BATCH_SIZE = 5250
-    import time
-    st_time = time.time()
-    with open('test.npy', 'rb') as f:
-        train_inputs = np.load(f)
-        train_labels = np.load(f)
-    for i in range(0, 1000, BATCH_SIZE):
-        # train_inputs = np.random.random([BATCH_SIZE, state_size + action_size])
-        # train_labels = np.random.random([BATCH_SIZE, state_size + 1])
-        model.train(train_inputs, train_labels, holdout_ratio=0.2)
-        # mean, var = model.predict(train_inputs[:100])
-        # print(mean[0])
-        # print(mean.mean().item())
-        # print(var[0])
-        # print(var.mean().item())
-        # exit()
-    print(time.time() - st_time)
-    # for name, param in model.model_list[0].named_parameters():
-    #     if param.requires_grad:
-    #         print(name, param.shape,param)
-    exit()
-    # for i in range(0, 10000, BATCH_SIZE):
-    #     model.train(Variable(torch.from_numpy(train_inputs[i:i + BATCH_SIZE])), Variable(torch.from_numpy(train_labels[i:i + BATCH_SIZE])))
-    #
-    # model.predict(Variable(torch.from_numpy(test_inputs[:1000])))
-
-
-if __name__ == '__main__':
-    main()
