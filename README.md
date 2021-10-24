@@ -34,12 +34,12 @@
 </p>
 
 <p align="center">
-  <img width="600" src="./assets/hardresults.gif">
+  <img width="300" src="./assets/hardresults.gif"> <img width="300" src="./assets/stochresults.gif">
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img width="600" src="./assets/stochresults.gif">
-</p>
+</p> -->
 
 ## Usage:
 
