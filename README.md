@@ -56,11 +56,11 @@ python train_demo_env.py --exp_name {gym env id}
 
 The environments directory contains the environments from:
 
-- Dextrous Gym: 
+- Dextrous Gym: [https://github.com/henrycharlesworth/dexterous-gym](https://github.com/henrycharlesworth/dexterous-gym)
 
-- PDDM:
+- PDDM: [https://github.com/google-research/pddm](https://github.com/google-research/pddm)
 
-- Stoch:
+- Stoch: [https://github.com/StochLab/SlopedTerrainLinearPolicy](https://github.com/StochLab/SlopedTerrainLinearPolicy)
 
 Import the environment of your choice. Example of Stoch requires `PyBullet` and runs with:
 ```
@@ -73,5 +73,5 @@ python train_demo_stoch.py
 
 We thank the authors of:
 
-- LOOP and Stable Baselines for the structured open source code.
+- [LOOP](https://github.com/hari-sikchi/LOOP), [MBPO-PyTorch](https://github.com/Xingyu-Lin/mbpo_pytorch) and [Stable Baselines](https://github.com/DLR-RM/stable-baselines3) for the structured open source code.
 - Dextrous Gym, PDDM and Stoch Lab for their open source robot environments
