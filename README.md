@@ -37,10 +37,6 @@
   <img width="45%" src="./assets/hardresults.gif"> <img width="45%" src="./assets/stochresults.gif">
 </p>
 
-<!-- <p align="center">
-  <img width="600" src="./assets/stochresults.gif">
-</p> -->
-
 ## Usage:
 
 Use `Python 3.6` and install `requirements.txt`:
