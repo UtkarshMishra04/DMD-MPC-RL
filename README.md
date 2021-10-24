@@ -16,7 +16,7 @@
 [stochresults]: './assets/stochresults.gif' -->
 
 <p align="center">
-  <img width="600" height="200" src="./assets/methodology.jpg">
+  <img width="600" src="./assets/methodology.jpg">
 </p>
 
 <!-- ![alt text][methodology] -->
@@ -24,21 +24,21 @@
 ### Simulation Results
 
 <p align="center">
-  <img width="600" height="200" src="./assets/simresults.gif">
+  <img width="600" src="./assets/simresults.gif">
 </p>
 
 ### Hardware Results
 
 <p align="center">
-  <img width="600" height="200" src="./assets/legresults.jpg">
+  <img width="600" src="./assets/legresults.jpg">
 </p>
 
 <p align="center">
-  <img width="600" height="200" src="./assets/hardresults.gif">
+  <img width="600" src="./assets/hardresults.gif">
 </p>
 
 <p align="center">
-  <img width="600" height="200" src="./assets/stochresults.gif">
+  <img width="600" src="./assets/stochresults.gif">
 </p>
 
 ## Usage:
