@@ -69,6 +69,15 @@ python train_demo_stoch.py
 
 ## Citation:
 
+```
+@article{mishra2021dynamic,
+  title={Dynamic Mirror Descent based Model Predictive Control for Accelerating Robot Learning},
+  author={Mishra, Utkarsh A, Samineni, Soumya R, Goel, Prakhar, Kunjeti, Himanshu, Lodha, Aman, Singh, Aditya, Sagi, Shalabh, Bhatnagar, and Kolathaya, Shishir},
+  journal={arXiv preprint arXiv:2106.15273},
+  year={2021}
+}
+```
+
 ## Acknowledgement:
 
 We thank the authors of:
