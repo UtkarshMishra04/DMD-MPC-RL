@@ -5,7 +5,7 @@
 
 (\* Equal Contribution)
 
-**Paper**: [arxiv.org/abs/1812.07829](arxiv.org/abs/1812.07829) 
+**Paper**: [arxiv.org/pdf/2112.02999.pdf](https://arxiv.org/pdf/2112.02999.pdf) 
 
 **Video**: [https://youtu.be/Bj9dN1KNPAs](https://youtu.be/Bj9dN1KNPAs) 
   
