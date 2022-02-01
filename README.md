@@ -1,6 +1,8 @@
 
 # Dynamic Mirror Descent based Model Predictive Control for Accelerating Robot Learning
 
+### To be presented at the 2022 International Conference on Robotics and Automation (ICRA)
+
 **Authors**: [Utkarsh A. Mishra](https://utkarshmishra04.github.io)\*, [Soumya R. Samineni](https://soumyarani.github.io/)\*, Prakhar Goel, Chandravaran Kunjeti, Himanshu Lodha, Aman Singh, Aditya Sagi, [Shalabh Bhatnagar](https://www.csa.iisc.ac.in/~shalabh/) and [Shishir Kolathaya](https://shishirny.github.io/)
 
 (\* Equal Contribution)
